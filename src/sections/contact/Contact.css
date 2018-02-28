@@ -1,0 +1,59 @@
+.picture-container {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}
+
+.contact-us-container {
+    margin-top: -32rem;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-us-text {
+    color: white;
+    font-size: 7rem;
+    text-align: center;
+}
+
+.form-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22rem;
+    padding-bottom: 60px;
+}
+
+.message-text {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.social-media-links-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.icon-container {
+    transition: background-color 0.4s ease;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.icon-container:hover {
+    background-color: #5F9EA0;
+}
