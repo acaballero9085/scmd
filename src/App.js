@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import FlatButton from 'material-ui/FlatButton'
-import { Route, Switch, withRouter } from 'react-router-dom'
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 
 // Components
 import Bio from './sections/bios/Bio'
@@ -46,7 +46,10 @@ class App extends Component {
         </div>
 
         <Switch>
-          <Route exact path='/scmd' component={Home}/>
+          
+          <Route exact path='/scmd' component={Home} render={() => (
+            <Redirect to="/scmd"/>
+          )}/>
           <Route path='/scmd/about' component={About}/>
           <Route path='/scmd/bios' component={Bio}/>
           <Route path='/scmd/samples' component={Samples}/>

@@ -3,6 +3,7 @@ import App from './App'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
+import { unregister } from './registerServiceWorker'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
@@ -20,3 +21,6 @@ ReactDOM.render(
         </MuiThemeProvider>
     </BrowserRouter>
 , document.getElementById('root'))
+
+// Unvalidate cache
+unregister()
