@@ -36,21 +36,21 @@ class App extends Component {
           </div>
 
           <div className='nav-buttons-container'>
-            <FlatButton label="Home" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/')}/>
-            <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/about')}/>
-            <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/bios')}/>
-            <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/samples')}/>
-            <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/contact')}/>
+            <FlatButton label="Home" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd')}/>
+            <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/about')}/>
+            <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/bios')}/>
+            <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/samples')}/>
+            <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/contact')}/>
           </div>
           
         </div>
 
         <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route path='/about' component={About}/>
-          <Route path='/bios' component={Bio}/>
-          <Route path='/samples' component={Samples}/>
-          <Route path='/contact' component={Contact}/>
+          <Route exact path='/scmd' component={Home}/>
+          <Route path='/scmd/about' component={About}/>
+          <Route path='/scmd/bios' component={Bio}/>
+          <Route path='/scmd/samples' component={Samples}/>
+          <Route path='/scmd/contact' component={Contact}/>
         </Switch>
 
       </div>
