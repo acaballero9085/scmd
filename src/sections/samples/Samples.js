@@ -6,7 +6,7 @@ import './Samples.css'
 class Samples extends Component {
     render(){
         return(
-            <div  style={{width: '80%', float: 'right'}}>
+            <div>
                 <div className='picture-container'>
                 
                 </div>

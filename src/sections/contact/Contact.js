@@ -42,7 +42,7 @@ class Contact extends Component {
 
     render(){
         return(
-            <div style={{width: '80%', float: 'right'}}>
+            <div>
 
                 <div className='picture-container'>
                     
