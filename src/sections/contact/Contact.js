@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import Divider from 'material-ui/Divider'
-import TextField from 'material-ui/TextField'
-import RaisedButton from 'material-ui/RaisedButton'
 
 // Styles
 import './Contact.css'
-import { styles } from './styles'
 
 class Contact extends Component {
     constructor(props){
@@ -35,11 +32,6 @@ class Contact extends Component {
         this.setState({message: newValue})
     }
 
-    handleSubmit = () => {
-        // const { name, email, phone, message } = this.state
-
-    }
-
     render(){
         return(
             <div>
@@ -56,36 +48,20 @@ class Contact extends Component {
 
                     <p className='message-text'>Want to get in touch? Fill out the form below to send us a message and we will get back to you as soon as possible!</p>
 
-                    <TextField
-                        style={styles.textField}
-                        hintText="Name"
-                        hintStyle={styles.hintStyle}
-                        inputStyle={styles.inputStyle}
-                        onChange={this.handleName}
-                    /><br />
-                    <TextField
-                        style={styles.textField}
-                        hintText="Email Address"
-                        hintStyle={styles.hintStyle}
-                        inputStyle={styles.inputStyle}
-                        onChange={this.handleEmail}
-                    /><br />
-                    <TextField
-                        style={styles.textField}
-                        hintText="Phone Number"
-                        hintStyle={styles.hintStyle}
-                        inputStyle={styles.inputStyle}
-                        onChange={this.handlePhone}
-                    /><br />
-                    <TextField
-                        style={styles.textField}
-                        multiLine={true}
-                        hintText="Message"
-                        hintStyle={styles.hintStyle}
-                        inputStyle={styles.inputStyle}
-                        onChange={this.handleMessage}
-                    /><br />
-                    <RaisedButton label="Send" primary={true} style={styles.button} onClick={this.handleSubmit} />
+                    <form className='form' action={`https://formspree.io/${process.env.REACT_APP_CONTACT_EMAIL}`} method="POST">
+
+                        <input placeholder="Name" className='text-field' type="text" name="Name"/>
+
+                        <input placeholder="Email" className='text-field' type="email" name="Email"/>
+
+                        <input placeholder="Phone" className='text-field' type="text" name="Phone"/>
+
+                        <input placeholder="Message" className='text-field' type="text" name="Message"/>
+
+                        <input className='submit-button' type="submit" value="SEND"/>
+                        <input type="hidden" name="_next" value="scmd/contact" />
+                    </form>
+
                 </div>
 
                 <Divider/>

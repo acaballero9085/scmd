@@ -13,7 +13,7 @@ class About extends Component {
                 </div>
 
                 <div className='about-container'>
-                    <p className='about-text'>About</p>
+                    <p className='about-text'>About Us</p>
                 </div>
 
                 <div className='about-text-container'>
