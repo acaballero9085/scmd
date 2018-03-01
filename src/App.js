@@ -1,7 +1,4 @@
-import AppBar from 'material-ui/AppBar'
-import Drawer from 'material-ui/Drawer'
 import React, { Component } from 'react'
-import MenuItem from 'material-ui/MenuItem'
 import FlatButton from 'material-ui/FlatButton'
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 
@@ -32,26 +29,26 @@ class App extends Component {
     return (
       <div>
 
-        <AppBar
-          title="SouthCoast Music and Design"
-          showMenuIconButton={false}
-          zDepth={2}
-          style={{zIndex: 5, position: 'fixed'}}
-        />
+        <div className='nav-container'>
 
-        <Drawer
-          containerStyle={{zIndex: 1, marginTop: '4rem', width: '20%'}}
-        >
-          <MenuItem onClick={() => this.nav('/scmd/about')}>About Us</MenuItem>
-          <MenuItem onClick={() => this.nav('/scmd/bios')}>Pricing</MenuItem>
-          <MenuItem onClick={() => this.nav('/scmd/contact')}>Contact Us</MenuItem>
-          <MenuItem onClick={() => this.nav('/scmd/samples')}>Sample</MenuItem>
-        </Drawer>
+          <div>
+            <h2 className='title'>SouthCoast Music and Design</h2>
+          </div>
+
+          <div className='nav-buttons-container'>
+            <FlatButton label="Home" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd')}/>
+            <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/about')}/>
+            <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/bios')}/>
+            <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/samples')}/>
+            <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/contact')}/>
+          </div>
+          
+        </div>
 
         <Switch>
           
-          <Route exact path='/scmd' render={() => (
-            <Redirect to="/scmd/about"/>
+          <Route exact path='/scmd' component={Home} render={() => (
+            <Redirect to="/scmd"/>
           )}/>
           <Route path='/scmd/about' component={About}/>
           <Route path='/scmd/bios' component={Bio}/>

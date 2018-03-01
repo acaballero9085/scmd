@@ -7,7 +7,7 @@ import './About.css'
 class About extends Component {
     render(){
         return(
-            <div  style={{width: '80%', float: 'right'}}>
+            <div>
                 <div className='picture-container'>
                 
                 </div>
