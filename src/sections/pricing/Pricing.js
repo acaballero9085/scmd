@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 // Styles
-import './Bio.css'
+import './Pricing.css'
 
 class Bio extends Component {
     render(){
@@ -9,6 +9,10 @@ class Bio extends Component {
             <div>
                 <div className='picture-container'>
                 
+                </div>
+
+                <div className='pricing-container'>
+                    <p className='pricing-text'>Pricing</p>
                 </div>
             </div>
         )

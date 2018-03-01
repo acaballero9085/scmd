@@ -25,6 +25,46 @@
     padding-bottom: 60px;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-field{
+    height: 24px;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    border: medium none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+    transition: all 0.2s linear;
+}
+
+.text-field::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.text-field:focus{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.submit-button{
+    border: 10px none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 36px;
+    width: 88px;
+    font-size: 0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 6px, rgba(0, 0, 0, 0.6) 0px 1px 4px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.submit-button:hover{
+    background-color: #5F9EA0;
+}
+
 .message-text {
     font-size: 20px;
     text-align: center;
