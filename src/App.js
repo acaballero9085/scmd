@@ -50,7 +50,7 @@ class App extends Component {
 
         <Switch>
           
-          <Route exact path='/scmd' component={Home} render={() => (
+          <Route exact path='/scmd' render={() => (
             <Redirect to="/scmd/about"/>
           )}/>
           <Route path='/scmd/about' component={About}/>
