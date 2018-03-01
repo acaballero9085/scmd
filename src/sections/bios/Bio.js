@@ -6,7 +6,7 @@ import './Bio.css'
 class Bio extends Component {
     render(){
         return(
-            <div>
+            <div  style={{width: '80%', float: 'right'}}>
                 <div className='picture-container'>
                 
                 </div>
