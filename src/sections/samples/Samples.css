@@ -16,3 +16,22 @@
     font-size: 6rem;
     text-align: center;
 }
+
+@media screen and (max-width: 425px) {
+    .picture-container{
+        height: 400px;
+    }
+
+    .sample-container {
+        width: 300px;
+        margin-top: -18.5rem;
+    }
+
+    .sample-text{
+        font-size: 3rem;
+    }
+
+    .form-container{
+        margin-top: 17rem;
+    }
+}

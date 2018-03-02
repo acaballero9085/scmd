@@ -20,3 +20,37 @@
     display: flex;
     align-items: center;
 }
+
+.hamburger-menu{
+    display: none;
+}
+
+.filler{
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .nav-buttons-container {
+        display: none;
+    }
+
+    .nav-container{
+        justify-content: space-around;
+    }
+
+    .title {
+        margin-left: -1rem;
+        font-size: 1.3rem;
+    }
+
+    .hamburger-menu{
+        display: flex;
+        align-items: center;
+    }
+    
+    .filler{
+        display: initial;
+        width: .1rem;
+        height: 20px;
+    }
+}

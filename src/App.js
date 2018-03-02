@@ -31,6 +31,10 @@ class App extends Component {
 
         <div className='nav-container'>
 
+          <div className='hamburger-menu'>
+            <i className="fas fa-bars fa-2x" style={{color: '#fff'}}></i>
+          </div>
+
           <div>
             <h2 className='title'>SouthCoast Music and Design</h2>
           </div>
@@ -41,6 +45,9 @@ class App extends Component {
             <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/pricing')}/>
             <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/samples')}/>
             <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/contact')}/>
+          </div>
+
+          <div className='filler'>
           </div>
           
         </div>
