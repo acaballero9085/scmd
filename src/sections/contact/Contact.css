@@ -25,6 +25,25 @@
     padding-bottom: 60px;
 }
 
+@media screen and (max-width: 425px) {
+    .picture-container{
+        height: 400px;
+    }
+
+    .contact-us-container {
+        width: 300px;
+        margin-top: -18.5rem;
+    }
+
+    .contact-us-text{
+        font-size: 3rem;
+    }
+
+    .form-container{
+        margin-top: 17rem;
+    }
+}
+
 .form{
     display: flex;
     flex-direction: column;
@@ -46,6 +65,7 @@
 
 .text-field:focus{
     border-bottom: 2px solid rgb(0, 0, 0);
+    outline: none;
 }
 
 .submit-button{
