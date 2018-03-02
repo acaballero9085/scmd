@@ -6,6 +6,7 @@
     justify-content: space-between;
     position: fixed;
     background-color: #000000;
+    z-index: 5;
 
     display: flex;
     justify-content: space-around;
@@ -23,10 +24,7 @@
 
 .hamburger-menu{
     display: none;
-}
-
-.filler{
-    display: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 425px) {
@@ -47,10 +45,28 @@
         display: flex;
         align-items: center;
     }
-    
+
     .filler{
-        display: initial;
-        width: .1rem;
-        height: 20px;
+        width: 100%;
+        height: 144px;
+        margin-top: -82px;
+        background-color: black;
+        position: fixed;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .filler-open{
+        width: 100%;
+        height: 144px;
+        margin-top: 62px;
+        background-color: black;
+        position: fixed;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -17,6 +17,10 @@ class App extends Component {
   constructor(props){
     super(props)
 
+    this.state = {
+      open: false
+    }
+
     this.nav = this.nav.bind(this)
   }
 
@@ -25,13 +29,24 @@ class App extends Component {
     history.push(path)
   }
 
+  openMenu = () => {
+    this.setState({open: !this.state.open})
+  }
+
   render() {
+    const { open } = this.state
+    let state = 'filler'
+
+    if(open){
+      state = 'filler-open'
+    }
+
     return (
       <div>
 
         <div className='nav-container'>
 
-          <div className='hamburger-menu'>
+          <div className='hamburger-menu' onClick={this.openMenu}>
             <i className="fas fa-bars fa-2x" style={{color: '#fff'}}></i>
           </div>
 
@@ -46,10 +61,16 @@ class App extends Component {
             <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/samples')}/>
             <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/contact')}/>
           </div>
-
-          <div className='filler'>
-          </div>
           
+        </div>
+
+        <div className={state}>
+
+          <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/scmd/about'); this.setState({open: !this.state.open})}}/>
+          <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/scmd/pricing'); this.setState({open: !this.state.open})}}/>
+          <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/scmd/samples'); this.setState({open: !this.state.open})}}/>
+          <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/scmd/contact'); this.setState({open: !this.state.open})}}/>
+        
         </div>
 
         <Switch>
