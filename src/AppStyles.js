@@ -2,6 +2,6 @@ export const styles = {
     buttonLabelStyle: {
         fontFamily: 'PT Sans, sans-serif',
         fontWeight: 'bold',
-        color: '#ffffff'
+        color: '#37b2fc'
     }
 }
