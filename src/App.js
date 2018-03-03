@@ -47,11 +47,13 @@ class App extends Component {
         <div className='nav-container'>
 
           <div className='hamburger-menu' onClick={this.openMenu}>
-            <i className="fas fa-bars fa-2x" style={{color: '#fff'}}></i>
+            <i className="fas fa-bars fa-2x" style={{color: '#000'}}></i>
           </div>
 
-          <div>
+          <div className='left-container'>
             <h2 className='title'>SouthCoast Music and Design</h2>
+
+              <img className='icon' src='/images/logo.png' alt='logo'></img>
           </div>
 
           <div className='nav-buttons-container'>
@@ -60,6 +62,9 @@ class App extends Component {
             <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/pricing')}/>
             <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/samples')}/>
             <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/contact')}/>
+          </div>
+
+          <div className='right-side'>
           </div>
           
         </div>
