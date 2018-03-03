@@ -33,11 +33,6 @@ class About extends Component {
 
                     <h1>Meet the SouthCoast team</h1>
 
-                    {/* <p>Lorem ipsum dolor sit amet, ex erat commodo vocibus usu, ius vivendo deleniti democritum 
-                        ex. Mei id detracto verterem tincidunt, ex sonet latine scripta nam. Purto causae tractatos 
-                        cu mea, id latine cotidieque omittantur his. Iriure argumentum pro ei. Sale solum veniam an duo.
-                    </p> */}
-
                     <div className='card-container'>
 
                         <div className='left-about-container'>
@@ -191,7 +186,7 @@ class About extends Component {
                         </div>
 
                         <div className='right-container'>
-                            <img className='jb-profile' src={patrick} height='600px'/>
+                            <img className='p-profile' src={patrick} height='600px'/>
                         </div>
                     </div>
 
