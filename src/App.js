@@ -12,6 +12,7 @@ import Contact from './sections/contact/Contact'
 // Styles
 import './App.css'
 import { styles } from './AppStyles'
+import logo from './sections/assets/logo.png'
 
 class App extends Component {
   constructor(props){
@@ -53,7 +54,7 @@ class App extends Component {
           <div className='left-container'>
             <h2 className='title'>SouthCoast Music and Design</h2>
 
-              <img className='icon' src='/images/logo.png' alt='logo'></img>
+              <img className='icon' src={logo} alt='logo'></img>
           </div>
 
           <div className='nav-buttons-container'>
