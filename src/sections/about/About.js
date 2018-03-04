@@ -31,7 +31,7 @@ class About extends Component {
                         provide great work to a program of any level.
                     </p>
 
-                    <h1>Meet the SouthCoast team</h1>
+                    <h1>Meet the SouthCoast Team</h1>
 
                     <div className='card-container'>
 
