@@ -3,6 +3,7 @@ import Divider from 'material-ui/Divider'
 
 // Styles
 import './Contact.css'
+import image1 from '../assets/image1.jpeg'
 
 class Contact extends Component {
     constructor(props){
@@ -37,7 +38,7 @@ class Contact extends Component {
             <div>
 
                 <div className='picture-container'>
-                    
+                    <img className='image-pic' src={image1}/>
                 </div>
 
                 <div className='contact-us-container'>
