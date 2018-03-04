@@ -81,7 +81,7 @@ class App extends Component {
 
         <Switch>
           
-          <Route exact path='/scmd' render={() => (
+          <Route exact path='/' render={() => (
             <Redirect to="/scmd/about"/>
           )}/>
           <Route path='/scmd/about' component={About}/>
