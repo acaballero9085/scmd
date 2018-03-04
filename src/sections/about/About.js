@@ -15,7 +15,7 @@ class About extends Component {
         return(
             <div>
                 <div className='picture-container'>
-                    <img src={Siegel} width='100%' style={{marginTop: '-6rem'}} />
+                    <img className='siegel-pic' src={Siegel}/>
                 </div>
 
                 <div className='about-container'>

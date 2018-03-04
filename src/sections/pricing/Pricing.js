@@ -11,7 +11,7 @@ class Bio extends Component {
         return(
             <div>
                 <div className='picture-container'>
-                    <img src={Diviniere} width='100%' style={{marginTop: '-4rem'}} />
+                    <img className='diviniere-pic' src={Diviniere}/>
                 </div>
 
                 <div className='pricing-container'>

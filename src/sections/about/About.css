@@ -53,6 +53,11 @@
     overflow: auto;
 }
 
+.siegel-pic{
+    width: 100%;
+    margin-top: -6rem;
+}
+
 img.j-profile{
     margin-left: -25rem;
     /* box-shadow: inset 500px 0px 600px -97px rgba(51,50,51,0.34); */
@@ -100,6 +105,11 @@ p{
 }
 
 @media screen and (max-width: 425px) {
+
+    .siegel-pic{
+        margin-top: 3.8rem;
+    }
+
     .picture-container{
         height: 400px;
     }
