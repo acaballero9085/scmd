@@ -61,7 +61,7 @@ class App extends Component {
             {/* <FlatButton label="Home" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd')}/> */}
             <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/')}/>
             <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/pricing')}/>
-            <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/samples')}/>
+            {/* <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/samples')}/> */}
             <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/contact')}/>
           </div>
 
@@ -74,7 +74,7 @@ class App extends Component {
 
           <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/'); this.setState({open: !this.state.open})}}/>
           <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/pricing'); this.setState({open: !this.state.open})}}/>
-          <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/samples'); this.setState({open: !this.state.open})}}/>
+          {/* <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/samples'); this.setState({open: !this.state.open})}}/> */}
           <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/contact'); this.setState({open: !this.state.open})}}/>
         
         </div>
