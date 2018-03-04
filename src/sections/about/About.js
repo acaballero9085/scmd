@@ -5,6 +5,7 @@ import jeremy from '../assets/jeremy.png'
 import beavers from '../assets/beavers.jpg'
 import blake from '../assets/blake.jpg'
 import patrick from '../assets/patrick.jpg'
+import Siegel from '../assets/Siegel .jpg'
 
 // Styles
 import './About.css'
@@ -14,7 +15,7 @@ class About extends Component {
         return(
             <div>
                 <div className='picture-container'>
-                
+                    <img src={Siegel} width='100%' style={{marginTop: '-6rem'}} />
                 </div>
 
                 <div className='about-container'>

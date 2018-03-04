@@ -1,6 +1,8 @@
 import Divider from 'material-ui/Divider'
 import React, { Component } from 'react'
 
+import Diviniere from '../assets/Diviniere.jpg'
+
 // Styles
 import './Pricing.css'
 
@@ -9,7 +11,7 @@ class Bio extends Component {
         return(
             <div>
                 <div className='picture-container'>
-
+                    <img src={Diviniere} width='100%' style={{marginTop: '-4rem'}} />
                 </div>
 
                 <div className='pricing-container'>
