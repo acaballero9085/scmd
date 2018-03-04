@@ -59,10 +59,10 @@ class App extends Component {
 
           <div className='nav-buttons-container'>
             {/* <FlatButton label="Home" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd')}/> */}
-            <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/about')}/>
-            <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/pricing')}/>
-            <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/samples')}/>
-            <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd/contact')}/>
+            <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/')}/>
+            <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/pricing')}/>
+            <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/samples')}/>
+            <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/contact')}/>
           </div>
 
           <div className='right-side'>
@@ -72,22 +72,19 @@ class App extends Component {
 
         <div className={state}>
 
-          <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/scmd/about'); this.setState({open: !this.state.open})}}/>
-          <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/scmd/pricing'); this.setState({open: !this.state.open})}}/>
-          <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/scmd/samples'); this.setState({open: !this.state.open})}}/>
-          <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/scmd/contact'); this.setState({open: !this.state.open})}}/>
+          <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/'); this.setState({open: !this.state.open})}}/>
+          <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/pricing'); this.setState({open: !this.state.open})}}/>
+          <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/samples'); this.setState({open: !this.state.open})}}/>
+          <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/contact'); this.setState({open: !this.state.open})}}/>
         
         </div>
 
         <Switch>
           
-          <Route exact path='/' render={() => (
-            <Redirect to="/scmd/about"/>
-          )}/>
-          <Route path='/scmd/about' component={About}/>
-          <Route path='/scmd/pricing' component={Pricing}/>
-          <Route path='/scmd/samples' component={Samples}/>
-          <Route path='/scmd/contact' component={Contact}/>
+          <Route exact path='/' component={About}/>
+          <Route path='/pricing' component={Pricing}/>
+          <Route path='/samples' component={Samples}/>
+          <Route path='/contact' component={Contact}/>
         </Switch>
 
       </div>
