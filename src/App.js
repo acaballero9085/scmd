@@ -59,10 +59,10 @@ class App extends Component {
 
           <div className='nav-buttons-container'>
             {/* <FlatButton label="Home" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd')}/> */}
-            <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/')}/>
-            <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/pricing')}/>
+            <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/'); window.scrollTo({"behavior": "smooth", "left": 0, "top": 0})}}/>
+            <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/pricing'); window.scrollTo({"behavior": "smooth", "left": 0, "top": 0})}}/>
             {/* <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/samples')}/> */}
-            <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/contact')}/>
+            <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/contact'); window.scrollTo({"behavior": "smooth", "left": 0, "top": 0})}}/>
           </div>
 
           <div className='right-side'>

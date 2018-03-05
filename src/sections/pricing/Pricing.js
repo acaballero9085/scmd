@@ -170,19 +170,19 @@ class Bio extends Component {
                 <Divider/>
 
                 <div className='social-media-links-container'>
-                    <a href="https://www.w3schools.com" target='_blank' rel="noopener noreferrer">
+                    <a href="https://www.google.com" target='_blank' rel="noopener noreferrer">
                         <div className='icon-container'>
                             <i className="fab fa-facebook-f fa-2x" style={{color: '#fff'}}></i>
                         </div>
                     </a>
 
-                    <a href="https://www.w3schools.com" target='_blank' rel="noopener noreferrer">
+                    <a href="https://www.google.com" target='_blank' rel="noopener noreferrer">
                         <div className='icon-container'>
                             <i class="fab fa-twitter fa-2x" style={{color: '#fff'}}></i>
                         </div>
                     </a>
 
-                    <a href="https://www.w3schools.com" target='_blank' rel="noopener noreferrer">
+                    <a href="https://www.google.com" target='_blank' rel="noopener noreferrer">
                         <div className='icon-container'>
                             <i class="fab fa-instagram fa-2x" style={{color: '#fff'}}></i>
                         </div>
