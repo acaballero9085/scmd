@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import FlatButton from 'material-ui/FlatButton'
-import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 
 // Components
+import LandingPage from './sections/landing-page/LandingPage'
 import Pricing from './sections/pricing/Pricing'
-// import Home from './sections/home/Home'
-import Samples from './sections/samples/Samples'
 import About from './sections/about/About'
 import Contact from './sections/contact/Contact'
 
@@ -30,60 +29,23 @@ class App extends Component {
     history.push(path)
   }
 
-  openMenu = () => {
-    this.setState({open: !this.state.open})
-  }
-
   render() {
-    const { open } = this.state
-    let state = 'filler'
-
-    if(open){
-      state = 'filler-open'
-    }
 
     return (
-      <div>
+      <div className='landing-page-container'>
 
-        <div className='nav-container'>
+        <img className='icon' width='600' height='300' src={logo} alt='logo'></img>
 
-          <div className='hamburger-menu' onClick={this.openMenu}>
-            <i className="fas fa-bars fa-2x" style={{color: '#000'}}></i>
-          </div>
-
-          <div className='left-container'>
-            <h2 className='title'>SouthCoast Music and Design</h2>
-
-              <img className='icon' src={logo} alt='logo'></img>
-          </div>
-
-          <div className='nav-buttons-container'>
-            {/* <FlatButton label="Home" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/scmd')}/> */}
-            <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/'); window.scrollTo({"behavior": "smooth", "left": 0, "top": 0})}}/>
-            <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/pricing'); window.scrollTo({"behavior": "smooth", "left": 0, "top": 0})}}/>
-            {/* <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => this.nav('/samples')}/> */}
-            <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/contact'); window.scrollTo({"behavior": "smooth", "left": 0, "top": 0})}}/>
-          </div>
-
-          <div className='right-side'>
-          </div>
-          
-        </div>
-
-        <div className={state}>
-
-          <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/'); this.setState({open: !this.state.open})}}/>
-          <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/pricing'); this.setState({open: !this.state.open})}}/>
-          {/* <FlatButton label="Sample Work" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/samples'); this.setState({open: !this.state.open})}}/> */}
+        <div className='landing-nav-buttons'>
+          <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/about'); this.setState({open: !this.state.open})}}/>
           <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/contact'); this.setState({open: !this.state.open})}}/>
-        
+          <FlatButton label="Pricing" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/pricing'); this.setState({open: !this.state.open})}}/>
         </div>
 
         <Switch>
-          
-          <Route exact path='/' component={About}/>
+          <Route exact path='/' component={LandingPage}/>
+          <Route path='/about' component={About}/>
           <Route path='/pricing' component={Pricing}/>
-          <Route path='/samples' component={Samples}/>
           <Route path='/contact' component={Contact}/>
         </Switch>
 
