@@ -3,7 +3,6 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 import FlatButton from 'material-ui/FlatButton'
 
 // Components
-import LandingPage from './sections/landing-page/LandingPage'
 import Pricing from './sections/pricing/Pricing'
 import About from './sections/about/About'
 import Contact from './sections/contact/Contact'
@@ -43,7 +42,6 @@ class App extends Component {
         </div>
 
         <Switch>
-          <Route exact path='/' component={LandingPage}/>
           <Route path='/about' component={About}/>
           <Route path='/pricing' component={Pricing}/>
           <Route path='/contact' component={Contact}/>
