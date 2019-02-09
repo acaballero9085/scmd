@@ -35,6 +35,8 @@ class App extends Component {
 
         <img className='icon' width='600' height='300' src={logo} alt='logo'></img>
 
+        <label className='mission-statement'></label>
+
         <div className='landing-nav-buttons'>
           <FlatButton label="About us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/about'); this.setState({open: !this.state.open})}}/>
           <FlatButton label="Contact us" labelStyle={styles.buttonLabelStyle} onClick={() => {this.nav('/contact'); this.setState({open: !this.state.open})}}/>
